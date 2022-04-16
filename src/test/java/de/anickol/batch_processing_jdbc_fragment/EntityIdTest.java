@@ -1,4 +1,4 @@
-package de.anickol.batch_insert_jdbc_fragment;
+package de.anickol.batch_processing_jdbc_fragment;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
@@ -12,8 +12,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.jdbc.DataJdbcTest;
 
-import de.anickol.batch_insert_jdbc_fragment.model.EntityId;
-import de.anickol.batch_insert_jdbc_fragment.repositry.EntityIdRepository;
+import de.anickol.batch_processing_jdbc_fragment.model.EntityId;
+import de.anickol.batch_processing_jdbc_fragment.repositry.EntityIdRepository;
 
 /**
  * Tests for the {@code EntityIdRepository}.

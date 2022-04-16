@@ -1,11 +1,11 @@
-package de.anickol.batch_insert_jdbc_fragment.repositry;
+package de.anickol.batch_processing_jdbc_fragment.repositry;
 
 import java.util.Optional;
 
 import org.springframework.data.repository.CrudRepository;
 
-import de.anickol.batch_insert_jdbc_fragment.InsertAll;
-import de.anickol.batch_insert_jdbc_fragment.model.EntityId;
+import de.anickol.batch_processing_jdbc_fragment.InsertAll;
+import de.anickol.batch_processing_jdbc_fragment.model.EntityId;
 
 /**
  * Repository for tests implementing InsertAll fragment.

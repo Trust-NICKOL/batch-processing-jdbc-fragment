@@ -1,4 +1,4 @@
-# batch-insert-jdbc-fragment [![Build Status](https://app.travis-ci.com/anickol/batch-insert-jdbc-fragment.svg?branch=main)](https://app.travis-ci.com/anickol/batch-insert-jdbc-fragment)
+# batch-processing-jdbc-fragment [![Build Status](https://app.travis-ci.com/anickol/batch-processing-jdbc-fragment.svg?branch=main)](https://app.travis-ci.com/anickol/batch-processing-jdbc-fragment)
 
 
 This repository hosts a [Spring Data JDBC fragment][spring-data-jdbc-fragment], which implements faster batch inserts for [Spring Data JDBC Repositories][spring-data-jdbc-repository].
@@ -39,7 +39,7 @@ With maven, you can install the library by adding the following dependency to yo
 ```xml
 <dependency>
     <groupId>de.anickol</groupId>
-    <artifactId>batch-insert-jdbc-fragment</artifactId>
+    <artifactId>batch-processing-jdbc-fragment</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -49,7 +49,7 @@ With maven, you can install the library by adding the following dependency to yo
 The auto-configuration of the library can be customized using the following property:
 
 ```property
-de.anickol.batch_insert_jdbc_fragment.enabled = true|false (default: true)
+de.anickol.batch_processing_jdbc_fragment.enabled = true|false (default: true)
 ```
 
 ## Usage
@@ -57,7 +57,7 @@ de.anickol.batch_insert_jdbc_fragment.enabled = true|false (default: true)
 Just add the interface `InsertAll` to the repository where you want to use the fragment.
 
 ```java
-import de.anickol.batch_insert_jdbc_fragment.InsertAll;
+import de.anickol.batch_processing_jdbc_fragment.InsertAll;
 import org.springframework.data.repository.CrudRepository;
         
 public interface MyCrudRepository extends CrudRepository<T, ID>, InsertAll<T> {};

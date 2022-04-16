@@ -1,4 +1,4 @@
-package de.anickol.batch_insert_jdbc_fragment;
+package de.anickol.batch_processing_jdbc_fragment;
 
 import java.util.Iterator;
 

@@ -1,4 +1,4 @@
-package de.anickol.batch_insert_jdbc_fragment;
+package de.anickol.batch_processing_jdbc_fragment;
 
 /**
  * Interface for adding the {@code insertAll} repository fragment to a jdbc repository.

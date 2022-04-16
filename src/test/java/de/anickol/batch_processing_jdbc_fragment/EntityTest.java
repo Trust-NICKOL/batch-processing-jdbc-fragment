@@ -1,4 +1,4 @@
-package de.anickol.batch_insert_jdbc_fragment;
+package de.anickol.batch_processing_jdbc_fragment;
 
 import static java.util.Comparator.comparing;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -17,8 +17,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.jdbc.DataJdbcTest;
 import org.springframework.dao.DuplicateKeyException;
 
-import de.anickol.batch_insert_jdbc_fragment.model.Entity;
-import de.anickol.batch_insert_jdbc_fragment.repositry.EntityRepository;
+import de.anickol.batch_processing_jdbc_fragment.model.Entity;
+import de.anickol.batch_processing_jdbc_fragment.repositry.EntityRepository;
 
 /**
  * Tests for the EntityRepository.

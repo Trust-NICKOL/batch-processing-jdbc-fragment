@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-de.anickol.batch_insert_jdbc_fragment.autoconfig.AutoConfiguration
+de.anickol.batch_processing_jdbc_fragment.autoconfig.AutoConfiguration
