@@ -1,5 +1,4 @@
-# batch-processing-jdbc-fragment [![Build Status](https://app.travis-ci.com/anickol/batch-processing-jdbc-fragment.svg?branch=main)](https://app.travis-ci.com/anickol/batch-processing-jdbc-fragment)
-
+# batch-processing-jdbc-fragment
 
 This repository hosts a [Spring Data JDBC fragment][spring-data-jdbc-fragment], which implements faster batch inserts for [Spring Data JDBC Repositories][spring-data-jdbc-repository].
 The performance improvement is achieved by bypassing tests and management done by the Spring Data JDBC framework and the usage of simple [Spring JDBC][spring-framework] core features. 
@@ -38,7 +37,7 @@ With maven, you can install the library by adding the following dependency to yo
 
 ```xml
 <dependency>
-    <groupId>de.anickol</groupId>
+    <groupId>de.trust_nickol</groupId>
     <artifactId>batch-processing-jdbc-fragment</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 </dependency>
@@ -57,7 +56,7 @@ de.anickol.batch_processing_jdbc_fragment.enabled = true|false (default: true)
 Just add the interface `InsertAll` to the repository where you want to use the fragment.
 
 ```java
-import de.anickol.batch_processing_jdbc_fragment.InsertAll;
+import de.trust_nickol.batch_processing_jdbc_fragment.InsertAll;
 import org.springframework.data.repository.CrudRepository;
         
 public interface MyCrudRepository extends CrudRepository<T, ID>, InsertAll<T> {};
