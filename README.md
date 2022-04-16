@@ -83,7 +83,6 @@ Please make sure to update tests as appropriate.
 
 For more information see [CONTRIBUTING](CONTRIBUTING.md).
 
-
 ## License
 
 This software library is released under version 2.0 of the Apache License.
