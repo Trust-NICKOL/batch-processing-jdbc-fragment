@@ -15,7 +15,16 @@
 	<artifactId>batch-processing-jdbc-fragment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Spring Data JDBC fragment for faster batch inserts.</description>
+	<url>https://github.com/Trust-NICKOL/batch-processing-jdbc-fragment</url>
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,6 +32,21 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
+
+	<developers>
+		<developer>
+			<name>Alexander Nickol</name>
+			<email>a.nickol@trust-nickol.de</email>
+			<organization>Trust NICKOL GmbH</organization>
+			<organizationUrl>https://www.trust-nickol.de</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com:Trust-NICKOL/batch-processing-jdbc-fragment.git</connection>
+		<developerConnection>scm:git:ssh://github.com:Trust-NICKOL/batch-processing-jdbc-fragment.git</developerConnection>
+		<url>https://github.com/Trust-NICKOL/batch-processing-jdbc-fragment/archive/refs/heads/main.zip</url>
+	</scm>
 
 	<dependencies>
 		<dependency>

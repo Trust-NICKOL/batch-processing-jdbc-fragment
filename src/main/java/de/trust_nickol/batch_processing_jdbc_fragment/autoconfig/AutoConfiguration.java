@@ -17,7 +17,7 @@ import de.trust_nickol.batch_processing_jdbc_fragment.InsertAllImpl;
 public class AutoConfiguration {
 	@Bean
 	@ConditionalOnMissingBean
-	@ConditionalOnProperty(value = "de.anickol.batch_processing_jdbc_fragment.enabled", matchIfMissing = true, havingValue = "true")
+	@ConditionalOnProperty(value = "de.trust_nickol.batch_processing_jdbc_fragment.enabled", matchIfMissing = true, havingValue = "true")
 	public <T> InsertAllImpl<T> insertAllImpl(DataSource dataSource, RelationalMappingContext context) {
 		return new InsertAllImpl<T>(dataSource, context);
 	}

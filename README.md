@@ -16,14 +16,16 @@ The purpose of this library is to allow faster insertion of simple datastructure
 The library depends on Spring Data JDBC and uses Spring Boot Auto-Configurations.
 
 ```xml
-<dependency>
-    <groupId>org.springframework.data</groupId>
-    <artifactId>spring-data-jdbc</artifactId>
-</dependency>
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-autoconfigure</artifactId>
-</dependency>
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-jdbc</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+</dependencies>
 ```
 
 The library has been tested with the following databases:
@@ -48,7 +50,7 @@ With maven, you can install the library by adding the following dependency to yo
 The auto-configuration of the library can be customized using the following property:
 
 ```property
-de.anickol.batch_processing_jdbc_fragment.enabled = true|false (default: true)
+de.trust_nickol.batch_processing_jdbc_fragment.enabled = true|false (default: true)
 ```
 
 ## Usage
