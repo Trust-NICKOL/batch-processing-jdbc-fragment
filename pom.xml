@@ -13,7 +13,7 @@
 
     <groupId>de.trust-nickol</groupId>
     <artifactId>batch-processing-jdbc-fragment</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Spring Data JDBC fragment for faster batch inserts.</description>
