@@ -1,83 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.4</version>
-		<relativePath/>
-	</parent>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.4</version>
+        <relativePath/>
+    </parent>
 
-	<groupId>de.trust-nickol</groupId>
-	<artifactId>batch-processing-jdbc-fragment</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+    <groupId>de.trust-nickol</groupId>
+    <artifactId>batch-processing-jdbc-fragment</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
-	<name>${project.groupId}:${project.artifactId}</name>
-	<description>Spring Data JDBC fragment for faster batch inserts.</description>
-	<url>https://github.com/Trust-NICKOL/batch-processing-jdbc-fragment</url>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Spring Data JDBC fragment for faster batch inserts.</description>
+    <url>https://github.com/Trust-NICKOL/batch-processing-jdbc-fragment</url>
 
-	<licenses>
-		<license>
-			<name>The Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>11</java.version>
-		<maven.compiler.source>${java.version}</maven.compiler.source>
-		<maven.compiler.target>${java.version}</maven.compiler.target>
-	</properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>11</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+    </properties>
 
-	<developers>
-		<developer>
-			<name>Alexander Nickol</name>
-			<email>a.nickol@trust-nickol.de</email>
-			<organization>Trust NICKOL GmbH</organization>
-			<organizationUrl>https://www.trust-nickol.de</organizationUrl>
-		</developer>
-	</developers>
+    <developers>
+        <developer>
+            <name>Alexander Nickol</name>
+            <email>a.nickol@trust-nickol.de</email>
+            <organization>Trust NICKOL GmbH</organization>
+            <organizationUrl>https://www.trust-nickol.de</organizationUrl>
+        </developer>
+    </developers>
 
-	<scm>
-		<connection>scm:git:git://github.com:Trust-NICKOL/batch-processing-jdbc-fragment.git</connection>
-		<developerConnection>scm:git:ssh://github.com:Trust-NICKOL/batch-processing-jdbc-fragment.git</developerConnection>
-		<url>https://github.com/Trust-NICKOL/batch-processing-jdbc-fragment/archive/refs/heads/main.zip</url>
-	</scm>
+    <scm>
+        <connection>scm:git:git://github.com:Trust-NICKOL/batch-processing-jdbc-fragment.git</connection>
+        <developerConnection>scm:git:ssh://github.com:Trust-NICKOL/batch-processing-jdbc-fragment.git
+        </developerConnection>
+        <url>https://github.com/Trust-NICKOL/batch-processing-jdbc-fragment/archive/refs/heads/main.zip</url>
+    </scm>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-jdbc</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
 
-		<!-- test scope -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-test-autoconfigure</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
+        <!-- test scope -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test-autoconfigure</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
