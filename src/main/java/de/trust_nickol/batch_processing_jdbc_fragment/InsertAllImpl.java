@@ -1,4 +1,4 @@
-package de.anickol.batch_processing_jdbc_fragment;
+package de.trust_nickol.batch_processing_jdbc_fragment;
 
 import java.util.Iterator;
 

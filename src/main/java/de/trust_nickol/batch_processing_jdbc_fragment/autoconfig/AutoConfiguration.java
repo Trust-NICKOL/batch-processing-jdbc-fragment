@@ -1,4 +1,4 @@
-package de.anickol.batch_processing_jdbc_fragment.autoconfig;
+package de.trust_nickol.batch_processing_jdbc_fragment.autoconfig;
 
 import javax.sql.DataSource;
 
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.relational.core.mapping.RelationalMappingContext;
 
-import de.anickol.batch_processing_jdbc_fragment.InsertAllImpl;
+import de.trust_nickol.batch_processing_jdbc_fragment.InsertAllImpl;
 
 /**
  * Auto-Configuration for activating the fragment insertAllImpl.

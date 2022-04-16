@@ -1,4 +1,4 @@
-package de.anickol.batch_processing_jdbc_fragment.model;
+package de.trust_nickol.batch_processing_jdbc_fragment.model;
 
 import org.springframework.data.annotation.Id;
 

@@ -11,7 +11,7 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>de.anickol</groupId>
+	<groupId>de.trust-nickol</groupId>
 	<artifactId>batch-processing-jdbc-fragment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
