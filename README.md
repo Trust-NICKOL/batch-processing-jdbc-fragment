@@ -39,9 +39,9 @@ With maven, you can install the library by adding the following dependency to yo
 
 ```xml
 <dependency>
-    <groupId>de.trust_nickol</groupId>
+    <groupId>de.trust-nickol</groupId>
     <artifactId>batch-processing-jdbc-fragment</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 
