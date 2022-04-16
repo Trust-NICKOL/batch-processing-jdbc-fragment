@@ -33,7 +33,7 @@ The library has been tested with the following databases:
 
 ## Installation
 
-With maven you can install the library by adding the following dependency to your `pom.xml`:
+With maven, you can install the library by adding the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
