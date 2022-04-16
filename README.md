@@ -1,4 +1,5 @@
 # batch-insert-jdbc-fragment
+[![Build Status](https://app.travis-ci.com/anickol/batch-insert-jdbc-fragment.svg?branch=main)](https://app.travis-ci.com/anickol/batch-insert-jdbc-fragment)
 
 This repository hosts a [Spring Data JDBC fragment][spring-data-jdbc-fragment], which implements faster batch inserts for [Spring Data JDBC Repositories][spring-data-jdbc-repository].
 The performance improvement is achieved by bypassing tests and management done by the Spring Data JDBC framework and the usage of simple [Spring JDBC][spring-framework] core features. 
