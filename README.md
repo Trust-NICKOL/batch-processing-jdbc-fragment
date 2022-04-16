@@ -56,6 +56,9 @@ de.anickol.batch_insert_jdbc_fragment.enabled = true|false (default: true)
 Just add the interface `InsertAll` to the repository where you want to use the fragment.
 
 ```java
+import de.anickol.batch_insert_jdbc_fragment.InsertAll;
+import org.springframework.data.repository.CrudRepository;
+        
 public interface MyCrudRepository extends CrudRepository<T, ID>, InsertAll<T> {};
 ```
 
